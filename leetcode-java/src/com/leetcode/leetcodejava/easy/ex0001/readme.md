@@ -2,22 +2,35 @@
 
 #### \#Array \#HashTable
 
-## Solução Simples (Força Bruta)
+## Força Bruta (Solução Fraca)
 
-Considera todos os pares possíveis de números na matriz de entrada, e verifica se a soma de algum desses valores é 
-igual ao valor alvo. 
+Utilizamos dois loops `for` para iterar sobre cada par possível de números no array. Se a soma de um par de números é
+igual ao valor alvo, retornamos os índices desses números.
 
-A solução simples requer dois loops, um dentro do outro. O loop externo fará um loop sobre o array e, para cada 
-elemento visitado, o loop interno fará um loop sobre os elementos restantes no array e verificará se os dois 
-elementos somam o valor alvo.
+### Complexidade de Tempo
+>**O (n^2)** - Como estamos utilizando dois loops `for` aninhados, a complexidade de tempo é `O (n^2)`, onde **n** é o número
+> de elementos no array. Isso ocorre porque, no pior caso, teremos que comparar cada número com todos os outros números
+> no array.
 
-Assim que tivermos os dois valores que somam o valor alvo, simplesmente retornamos os dois índices do array com esses 
-valores.
+### Complexidade de Espaço
+>**O (1)** - A complexidade de espaço é `O (1)`, o que significa que o espaço necessário não aumenta com o tamanho do array de
+> entrada. Isso ocorre porque não estamos usando nenhuma estrutura de dados adicional cujo tamanho dependa do tamanho
+> do array de entrada.
+
+
+## HashMap (Solução Ideal)
+
+Iteramos sobre o array de números uma vez. Para cada número, calculamos o complemento `(target - nums[i])`. Se o 
+complemento estiver contido no `HashMap`, significa que encontramos os números em que a soma é igual ao valor alvo, 
+então  retornamos seus índices. Se o complemento não estiver contido no `HashMap`, adicionamos o `nums[i]` e seu
+`índice` no `HashMap`.
 
 ### Complexidade de tempo
->**O(n^2)** - O código usa loops aninhados para comparar todos os pares de elementos no array.
+>**O (n)** - Como estamos utilizando um único loop **for**, a complexidade de tempo é `O (n)`, onde **n** é o número
+> de elementos no array. Isso ocorre porque, no pior caso, teremos que iterar sobre cada número no array uma vez.
 
-### Complexidade de espaço
->**O(1)** - O espaço não depende do tamanho da matriz de entrada, portanto, apenas o espaço constante é usado.
-
-
+### Complexidade de Espaço
+>**O (n)** - A complexidade de espaço é `O (n)`, o que significa que o espaço necessário aumenta linearmente com o
+> tamanho do array de entrada. Isso ocorre porque estamos usando um **HashMap** para armazenar os números à medida que
+> os iteramos. No pior caso, todos os números serão armazenados no **HashMap**, portanto, o espaço necessário é proporcional
+> ao tamanho do array de entrada.

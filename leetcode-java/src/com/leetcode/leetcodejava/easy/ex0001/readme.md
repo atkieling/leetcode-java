@@ -2,7 +2,7 @@
 
 #### \#Array \#HashTable
 
-## Força Bruta (Solução Fraca)
+## Solução Força Bruta
 
 Utilizamos dois loops `for` para iterar sobre cada par possível de números no array. Se a soma de um par de números é
 igual ao valor alvo, retornamos os índices desses números.
@@ -18,7 +18,7 @@ igual ao valor alvo, retornamos os índices desses números.
 > do array de entrada.
 
 
-## HashMap (Solução Ideal)
+## Solução Ideal
 
 Iteramos sobre o array de números uma vez. Para cada número, calculamos o complemento `(target - nums[i])`. Se o 
 complemento estiver contido no `HashMap`, significa que encontramos os números em que a soma é igual ao valor alvo, 

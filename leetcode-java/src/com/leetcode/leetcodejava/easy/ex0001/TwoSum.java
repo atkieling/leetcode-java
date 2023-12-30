@@ -8,7 +8,7 @@ public class TwoSum {
 
         int[] nums = {2, 6, 5, 8, 11};
         int target = 14;
-        int[] output = twoSumHashMapSolution(nums, target);
+        int[] output = twoSumIdealSolution(nums, target);
 
         System.out.println("Os índices dos dois números são: [" + output[0] + ", " + output[1] + "]");
     }
@@ -26,9 +26,10 @@ public class TwoSum {
         return new int[]{-1, -1};
     }
 
-    public static int[] twoSumHashMapSolution(int[] nums, int target) {
+    public static int[] twoSumIdealSolution(int[] nums, int target) {
 
         HashMap<Integer, Integer> map = new HashMap<>();
+
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
             if (map.containsKey(complement)) {

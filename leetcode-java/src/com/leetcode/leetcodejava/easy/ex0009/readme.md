@@ -21,7 +21,7 @@ comparamos as duas Strings, se forem iguais, o número é um palíndromo, caso c
 ## Solução Ideal
 
 Verificamos se `x` é negativo ou se termina com zero (mas não é zero), pois esses números não podem ser palíndromos. Em
-seguida iniciamos um loop que continua até que `x` seja menor ou igual ao número revertido, isso garante que revertamos
+seguida, iniciamos um loop que continua até que `x` seja menor ou igual ao número revertido, isso garante que revertamos
 apenas a metade dos dígitos do número. Dentro do loop, adicionamos o último dígito de `x` ao final do número revertido, 
 e removemos o último dígito de `x`. Após, verificamos se `x` e o número revertido são iguais (para números com um número
 par de dígitos) ou se `x` é igual à metade do número revertido (para números com um número ímpar de dígitos). Se qualquer

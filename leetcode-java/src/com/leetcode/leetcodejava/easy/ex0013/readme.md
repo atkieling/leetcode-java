@@ -8,7 +8,7 @@ Inicializamos a variável `result` com 0. Esta variável armazenará o resultado
 trás para frente usando um loop `for`. A razão para percorrer de trás para frente é que, em números romanos, quando um
 símbolo menor aparece antes de um maior, isso significa que o valor do símbolo menor deve ser subtraído do maior. Dentro
 do loop, utilizamos uma instrução `switch` para verificar qual é o numeral romano atual. Para cada caso (ou seja, para
-cada numeral romano), adicionamos seu valor correspondente ao resultado. No entando, se o numeral for `I` e o resultado
+cada numeral romano), adicionamos seu valor correspondente ao resultado. No entanto, se o numeral for `I` e o resultado
 atual for maior ou igual a 5, subtraímos o valor em vez de adicioná-lo. Fazemos algo semelhante para os símbolos `X` e 
 `C`. Finalmente, após o loop ter percorrido todos os caracteres na String, retornamos o resultado.
 
@@ -24,7 +24,7 @@ atual for maior ou igual a 5, subtraímos o valor em vez de adicioná-lo. Fazemo
 
 ## Solução Ideal
 
-Criamos um `map` para associar cada numeral romano ao seu valor correspondente. Em seguinda, inicializamos a variável 
+Criamos um `map` para associar cada numeral romano ao seu valor correspondente. Em seguida, inicializamos a variável 
 `result` com 0 para armazenar o resultado final. Depois, percorremos a String de entrada do início ao fim utilizando um
 loop `for`. Dentro do loop, verificamos se o numeral romano atual é maior que o anterior. Se for, significa que estamos
 lidando com um caso onde um numeral romano menor precede um maior, como em `IV`. Então, subtraímos duas vezes o valor

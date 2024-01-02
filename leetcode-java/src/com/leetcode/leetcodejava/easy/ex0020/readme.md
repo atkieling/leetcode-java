@@ -17,8 +17,8 @@ Se o caractere atual é um parêntese fechado, o método verifica o topo da `pil
 verificados e a pilha está vazia, o método retorna true.
 
 Já o método auxiliar **isMatchingPair** verifica se um par de parênteses é um par correspondente. O método recebe dois caracteres
-como entrada, um parêntese aberto e um parêntese fechado, e retorna true se eles formam um par correspondente e false
-caso contrário.
+como entrada, um parêntese aberto e um parêntese fechado, e retorna true se eles formam um par correspondente. Caso
+contrário, retorna false .
 
 ### Complexidade de Tempo
 >**O (n^3)** - Onde **n** é o comprimento da String de entrada. Temos dois loops aninhados que percorrem a String de 

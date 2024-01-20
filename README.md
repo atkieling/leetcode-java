@@ -7,4 +7,4 @@
 | [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/)           |   [Solução](https://github.com/atkieling/leetcode-java/blob/ex0013/leetcode-java/src/com/leetcode/leetcodejava/easy/ex0013/RomanToInteger.java)    |    Fácil    |
 | [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [Solução](https://github.com/atkieling/leetcode-java/blob/ex0014/leetcode-java/src/com/leetcode/leetcodejava/easy/ex0014/LongestCommonPrefix.java) |    Fácil    |
 | [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)         |  [Solução](https://github.com/atkieling/leetcode-java/blob/ex0020/leetcode-java/src/com/leetcode/leetcodejava/easy/ex0020/ValidParentheses.java)   |    Fácil    |
-| [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)         |  [Solução]()   |    Fácil    |
+| [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)         |  [Solução](https://github.com/atkieling/leetcode-java/blob/ex0021/leetcode-java/src/com/leetcode/leetcodejava/easy/ex0021/MergeTwoSortedLists.java)   |    Fácil    |

@@ -13,12 +13,12 @@ Finalmente, retornamos o contador, que representa o número de elementos únicos
 
 ### Complexidade de Tempo
 >**O (n)** - Onde **n** é o número de elementos no array. Isso ocorre porque percorremos o array duas vezes: uma vez para
-> copiar os elementos únicos para o novo array e outra vez para copiá-lo de volta para o array original.
+> copiar os elementos únicos para o novo array, e outra vez para copiá-lo de volta para o array original.
 
 ### Complexidade de Espaço
 >**O (n)** - Onde **n** é o número de elementos no array. Isso ocorre porque criamos um novo array para armazenar os
-> elementos únicos. O tamanho desse novo array é o mesmo que o do array de entrada, portanto, o espaço que usamos é
-> diratamente proporcional ao tamanho do array de entrada. Portanto, a complexidade do espaço da solução é **O (n)**,
+> elementos únicos. O tamanho desse novo array é o mesmo que o do array de entrada, assim, o espaço que usamos é
+> diretamente proporcional ao tamanho do array de entrada. Portanto, a complexidade do espaço da solução é **O (n)**,
 > indicando que o espaço necessário aumenta linearmente com o tamanho da entrada.
 
 ## Solução Ideal

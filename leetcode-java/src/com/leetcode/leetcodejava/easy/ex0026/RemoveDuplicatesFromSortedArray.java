@@ -58,8 +58,8 @@ public class RemoveDuplicatesFromSortedArray {
         for (int i = 0; i < nums.length; i++) {
 
             int j = i;
-            // Enquanto os elementos forem iguais, avança o índice j
 
+            // Enquanto os elementos forem iguais, avança o índice j
             while (j < nums.length && nums[i] == nums[j]) {
                 j++;
             }

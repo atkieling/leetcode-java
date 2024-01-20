@@ -5,7 +5,7 @@
 ## Solução Força Bruta
 
 Iniciamos determinando os comprimentos das Strings `haystack` e `needle`, armazenando-os nas variáveis `l` e `n`,
-respectivamente. Em seguida, iniciamos um loop que percorre a String `haystack` desde o índice 0 até `n- l + 1`, pois
+respectivamente. Em seguida, iniciamos um loop que percorre a String `haystack` desde o índice 0 até `n - l + 1`, pois
 estamos procurando uma substring do tamanho de `needle` dentro de `haystack`. Para cada índice de início, extraímos uma
 substring de `haystack` do tamanho de `needle` e comparamos com `needle`. Se a substring e `needle` forem iguais,
 retornamos o índice de início, pois encontramos a primeira ocorrência de `needle` em `haystack`. Se não encontramos uma
@@ -13,7 +13,7 @@ ocorrência após percorrer toda a `haystack`, retornamos -1, indicando que `nee
 
 ### Complexidade de Tempo
 >**O (nm)** - Onde **n** é o tamanho da `haystack` e **m** é o tamanho da `needle`. Isso ocorre porque para cada caractere
-> na `haystack`, estamos verificando até `m` caracteres na `needle`.. Portanto, no pior caso, teríamos que fazer `n * m`
+> na `haystack`, estamos verificando até `m` caracteres na `needle`. Portanto, no pior caso, teríamos que fazer `n * m`
 > comparações.
 
 ### Complexidade de Espaço
@@ -37,5 +37,5 @@ encontrada, ela retorna -1.
 
 ### Complexidade de Espaço
 >**O (1)** - A função `indexOf` não precisa de nenhum espaço adicional que aumenta com o tamanho da entrada, então a
-> complexidade do espaço é **O (n)**, o que significa que a quantidade de memória necessária é constante, não importa o
+> complexidade do espaço é **O (1)**, o que significa que a quantidade de memória necessária é constante, não importa o
 > tamanho da entrada.

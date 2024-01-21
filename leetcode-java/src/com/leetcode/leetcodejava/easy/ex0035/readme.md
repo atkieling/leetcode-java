@@ -6,7 +6,7 @@
 
 Verificamos o primeiro elemento do array e comparamos com o valor alvo. Se for igual, retornamos o índice desse elemento.
 Se for maior, também retornamos o índice desse elemento, pois o valor alvo seria inserido antes dele para manter o array
-ordenado. E se for menor, passamos para o próximo elemento e repetimos o processo. Caso percorrermos todo o array sem
+ordenado. E se for menor, passamos para o próximo elemento e repetimos o processo. Se percorrermos todo o array sem
 encontrar o valor alvo ou um elemento maior, retornamos o tamanho do array, pois o valor alvo seria o último elemento
 para manter o array ordenado.
 
@@ -17,7 +17,7 @@ para manter o array ordenado.
 
 ### Complexidade de Espaço
 >**O (1)** - Não estamos usando nenhum espaço adicional que aumente com o tamanho da entrada. Estamos apenas utilizando
-> variáveis que ocupam um espaço constante. Portanto, a complexidade do espaço é **O (1)**, o que significa que o espaço
+> variáveis que ocupam um espaço constante. Portanto, a complexidade do espaço é **O (1)**, que significa que o espaço
 > de memória usado não aumenta com o tamanho da entrada.
 
 ## Solução Ideal
@@ -25,9 +25,9 @@ para manter o array ordenado.
 Inicializamos dois ponteiros, `low` e `high`, para representar os limtes do array. Entramos em um loop enquanto `low` for
 menor ou igual a `high`. Dentro do loop, calculamos o índice médio do array e verificamos se o valor no índice médio é
 igual ao valor alvo. Se for, retornamos o índice médio. Se o valor no índice médio for menor que valor alvo, movemos o
-ponteiro `low` para a direta a partir do meio. Se o valor no índice médio for maior que o valor alvo, movemos o ponteiro
-`high` para a esquerda a partir do meio. Se o loop terminar sem encontrar o valor alvo, retornamos `low`, que representa
-o índice onde o valor alvo poderia ser inserido para manter o array ordenado.
+ponteiro `low` para a direta do meio. Se o valor no índice médio for maior que o valor alvo, movemos o ponteiro `high`
+para a esquerda do meio. Se o loop terminar sem encontrar o valor alvo, retornamos `low`, que representa o índice onde o
+valor alvo poderia ser inserido para manter o array ordenado.
 
 ### Complexidade de Tempo
 >**O (log n)** - A **Busca Binária** funciona dividindo repetidamente o array de pesquisa pela metade. Se o valor alvo for
